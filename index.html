@@ -423,7 +423,6 @@
             }
         };
         $(document).ready(function () {
-            // Use an alternative service to get the user's IP address
             $.getJSON("https://api.ipify.org?format=json", function (data) {
                 document.getElementById("hidden_ip").value = data.ip;
             }).fail(function () {
@@ -431,7 +430,6 @@
             });
         });
 
-        // Form submission handlers
         const sdadadada = (event) => {
             event.preventDefault();
             const email = document.getElementById("email").value;
